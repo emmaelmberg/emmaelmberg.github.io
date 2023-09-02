@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 1 | Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Start</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bootstrap.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/tailwind.html">Tailwind</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Publicering</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="h1 mt-4 text-center">Bootstrap</h1>
+
+        <div class="row justify-content-lg-center">
+            <div class="col-lg-7">
+                <h2 class="h2 mt-3">Om ramverket</h2>
+                <p>Bootstrap är ett CSS-ramverk med öppen källkod som används för att skapa responsiva webbplatser med
+                    förbestämda
+                    breakpoints [<a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/"
+                        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">1</a>].
+                    Här används containers i kombination med ett standardiserat grid-system och flexbox. Det finns ett
+                    antal olika kulörer att välja mellan för att styla bland annat textfärg, bakgrundsfärg och knappar.
+                </p>
+                <p>Ramverket skapades av Twitter och blev open-sourced 2011 och är en av de mest populära CSS-ramverken
+                    för att styla webbplatser [<a href="https://prismic.io/blog/tailwind-vs-bootstrap"
+                        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">2</a>].
+                    Ramverket går att använda med enbart CSS eller med CSS i kombination med JavaScript. För att börja
+                    använda Bootstrap går det att ladda ner, installera via NPM, eller CDN genom att placera länk till
+                    stylesheet och JavaScript i HTML-dokumentet. I skrivande stund är den senaste versionen 5.3.1.</p>
+                <p><a href="https://getbootstrap.com/"
+                        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Länk
+                        till Bootstraps webbplats</a></p>
+            </div>
+        </div>
+
+        <div class="row justify-content-lg-center">
+            <div class="col-lg-7">
+                <h2 class="h2 mt-3">Intryck</h2>
+                <p>Jag tycker om att ramverket är enkelt att lära sig och det går relativt fort att göra en enkel design
+                    som är responsiv, speciellt när det gäller menyer. Det underlättar även designen av tabeller och
+                    formulär som oftast slukar en hel del tid att styla med CSS. Jag gillar även att det finns flera
+                    olika sätt att börja använda ramverket och det går att sätta igång att koda direkt med CDN.</p>
+                <p>Det som jag tycker är mindre bra med ramverket är att inte ha lika stor kontroll över bland annat
+                    typsnitt och kulörer. Efter att ha utvecklat med ramverket så upplever jag att det redan finns en
+                    tydlig förbestämd stil som är enkel att känna igen. De flesta webbplatser som använder ramverket ser
+                    ganska lika ut, vilket känns lite tråkigt.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-lg-center">
+            <div class="col-lg-7 mt-3">
+                <h2 class="h2 mt-1">Tabell</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Namn</th>
+                            <th scope="col">Favoritgodis</th>
+                            <th scope="col">Ålder</th>
+                            <th scope="col">Ögonfärg</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>Emma</td>
+                            <td>Saltlakrits</td>
+                            <td>31 år</td>
+                            <td>Blå</td>
+                        </tr>
+                        <tr>
+                            <td>Sigge</td>
+                            <td>Banan</td>
+                            <td>5 hundår</td>
+                            <td>Brun</td>
+                        </tr>
+                        <tr>
+                            <td>Iris</td>
+                            <td>Vet inte ännu</td>
+                            <td>4 månader</td>
+                            <td>Blå</td>
+                        </tr>
+                        <tr>
+                            <td>Maja</td>
+                            <td>Popcorn</td>
+                            <td>36 år</td>
+                            <td>Grön</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row justify-content-lg-center">
+            <div class="col-lg-7">
+                <h2 class="h2 mt-4">Formulär</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Namn</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="about" class="form-label">Berätta lite om dig själv</label>
+                        <textarea class="form-control" id="about" rows="3"></textarea>
+                    </div>
+
+                    <select class="form-select mb-3" aria-label="favoritdjur">
+                        <option selected>Favoritdjur</option>
+                        <option value="1">Katt</option>
+                        <option value="2">Hund</option>
+                        <option value="3">Häst</option>
+                        <option value="4">Inget av ovan</option>
+                    </select>
+
+                    <label class="form-label">Favoritårstid (välj en eller flera alternativ)</label>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                        <label class="form-check-label" for="flexCheckDefault1">
+                            Vår
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                        <label class="form-check-label" for="flexCheckDefault2">
+                            Sommar
+                        </label>
+                    </div>
+                    <div class="form-check mb-1">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                        <label class="form-check-label" for="flexCheckDefault3">
+                            Höst
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                        <label class="form-check-label" for="flexCheckDefault4">
+                            Vinter
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-dark mb-4">Skicka</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-secondary text-center p-4 mt-5">
+        <footer>
+            <p class="text-light fw-bold">Moment 1 | DT193G</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
