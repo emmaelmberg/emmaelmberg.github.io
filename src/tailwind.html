@@ -9,63 +9,78 @@
 </head>
 
 <body>
-    <div class="bg-gray-800 w-full mx-auto">
-        <nav>
-            <ul class="flex justify-center space-x-16 text-white p-4">
-                <li class="hover:underline"><a href="/index.html">Start</a></li>
-                <li class="hover:underline"><a href="/bootstrap.html">Bootstrap</a></li>
-                <li class="hover:underline"><a href="/src/tailwind.html" class="font-bold">Tailwind</a></li>
-                <li class="hover:underline"><a href="/publicering.html">Publicering</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <div class="bg-gray-800 w-full mx-auto">
+            <nav>
+                <ul class="flex space-x-5 justify-center md:space-x-16 text-white p-4">
+                    <li class="hover:underline"><a href="/index.html">Start</a></li>
+                    <li class="hover:underline"><a href="/bootstrap.html">Bootstrap</a></li>
+                    <li class="hover:underline"><a href="/src/tailwind.html" class="font-bold">Tailwind</a></li>
+                    <li class="hover:underline"><a href="/publicering.html">Publicering</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <div class="container max-w-3xl mx-auto p-4 font-serif text-gray-800 tracking-wide">
         <h1 class="text-6xl text-center py-7">Tailwind CSS</h1>
 
         <h2 class="text-4xl pb-2">Om ramverket</h2>
-        <p class="text-lg pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-            vero fuga est eos aut nam quasi non eius soluta in, itaque adipisci illo suscipit quidem animi at? Ut,
-            magni error.</p>
+        <p class="text-lg pb-4">Tailwind CSS är ett så kallat "utility-first" CSS-ramverk som utgår i från att kunna anpassa stylingen på en webbplats utefter olika komponenter [<a href="https://www.geeksforgeeks.org/introduction-to-tailwind-css/" class="underline hover:text-teal-700">1</a>]. Ramverket skapades 2017 av Adam Wathan och Steve Schoeger [<a href="https://prismic.io/blog/tailwind-vs-bootstrap" class="underline hover:text-teal-700">2</a>]</p>
 
-            <p class="text-lg pb-7">Länk till <a href="#" class="underline hover:text-teal-700">webbplats</a>.</p>
+        <p class="text-lg pb-7">I Tailwind CSS finns inga förbyggda klasser för exempelvis dropdown-menu eller dropdown-item utan här används i stället "lower level CSS" med klasser för padding och border-radius. Det finns dock en betalversion, Tailwind UI, med mer funktionalitet för detta och mycket mer.</p>
+
+        <p class="text-lg pb-7"><a href="https://tailwindcss.com/" class="underline hover:text-teal-700">Länk till
+                Tailwinds webbplats</a>.</p>
 
         <h2 class="text-4xl pb-2">Intryck</h2>
-        <p class="text-lg pb-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-            vero fuga est eos aut nam quasi non eius soluta in, itaque adipisci illo suscipit quidem animi at? Ut,
-            magni error.</p>
+        <p class="text-lg pb-4">Jag tycker om att ramverket ger en frihet att skapa en mer unik design på en webbplats
+            utan att behöva konfigurera något i själva CSS-filen. Detta gör att det inte går lika tydligt att se att en webbplats är gjord med Tailwind vilket jag tycker är positivt. Även om det tog lite längre tid att komma in i än andra ramverk känns det roligt att ha testat på.</p>
+
+        <p class="text-lg pb-7">Det som jag tycker mindre om med ramverket är styling på tabeller och formulär. Här ser
+            det ganska plottrigt ut i HTML-filen då det inte finns någon "färdig" grundddesign att utgå i från, och det
+            ger en känsla av att skriva inline-CSS snarare än klasser. Det var även krångligare att göra en responsiv
+            meny i jämförelse med Bootstrap då det inte finns någon färdig navbar-toggler med JavaScript för
+            hamburgermeny.</p>
 
         <h2 class="text-4xl pb-2">Tabell</h2>
         <table class="font-sans shadow-md border rounded w-full">
             <thead>
                 <tr>
-                    <th class="text-left pt-6 pb-2 px-4">Namn</th>
-                    <th class="text-left pt-6 pb-2 px-4">Favoritgodis</th>
-                    <th class="text-left pt-6 pb-2 px-4">Ögonfärg</th>
-                    <th class="text-left pt-6 pb-2 px-4">Ålder</th>
+                    <th class="text-left pt-6 pb-2 px-2 md:px-4">Namn</th>
+                    <th class="text-left pt-6 pb-2 px-2 md:px-4">Favoritgodis</th>
+                    <th class="text-left pt-6 pb-2 px-2 md:px-4">Ögonfärg</th>
+                    <th class="text-left pt-6 pb-2 px-2 md:px-4">Ålder</th>
                 </tr>
             </thead>
 
             <tbody>
                 <tr>
-                    <td class="pb-1 px-4">Emma</td>
-                    <td class="pb-1 px-4">Saltlakrits</td>
-                    <td class="pb-1 px-4">31 år</td>
-                    <td class="pb-1 px-4">Blå</td>
+                    <td class="pb-1 px-2 md:px-4">Emma</td>
+                    <td class="pb-1 px-2 md:px-4">Saltlakrits</td>
+                    <td class="pb-1 px-2 md:px-4">31 år</td>
+                    <td class="pb-1 px-2 md:px-4">Blå</td>
                 </tr>
 
                 <tr>
-                    <td class="pb-1 px-4">Sigge</td>
-                    <td class="pb-1 px-4">Banan</td>
-                    <td class="pb-1 px-4">5 hundår</td>
-                    <td class="pb-1 px-4">Brun</td>
+                    <td class="pb-1 px-2 md:px-4">Sigge</td>
+                    <td class="pb-1 px-2 md:px-4">Banan</td>
+                    <td class="pb-1 px-2 md:px-4">5 hundår</td>
+                    <td class="pb-1 px-2 md:px-4">Brun</td>
                 </tr>
 
                 <tr>
-                    <td class="pb-6 px-4">Sigge</td>
-                    <td class="pb-6 px-4">Banan</td>
-                    <td class="pb-6 px-4">5 hundår</td>
-                    <td class="pb-6 px-4">Brun</td>
+                    <td class="pb-1 px-2 md:px-4">Iris</td>
+                    <td class="pb-1 px-2 md:px-4">Vet inte ännu</td>
+                    <td class="pb-1 px-2 md:px-4">5 månader</td>
+                    <td class="pb-1 px-2 md:px-4">Blå</td>
+                </tr>
+
+                <tr>
+                    <td class="pb-6 px-2 md:px-4">Maja</td>
+                    <td class="pb-6 px-2 md:px-4">Popcorn</td>
+                    <td class="pb-6 px-2 md:px-4">36 år</td>
+                    <td class="pb-6 px-2 md:px-4">Grön</td>
                 </tr>
             </tbody>
         </table>
@@ -86,7 +101,9 @@
                     <label class="block text-gray-700 mb-2" for="about">
                         Berätta lite om dig själv
                     </label>
-                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="about" rows="3"></textarea>
+                    <textarea
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="about" rows="3"></textarea>
                 </div>
 
                 <div class="relative mb-4">
@@ -111,10 +128,14 @@
                     <label class="block text-gray-700 mb-1 pt-1">
                         Favoritårstid (välj en eller flera alternativ)
                     </label>
-                    <div><input class="shadow-md" type="checkbox" id="spring"><label class="ml-2" for="spring">Vår</label></div>
-                    <div><input class="shadow-md" type="checkbox" id="summer"><label class="ml-2" for="summer">Sommar</label></div>
-                    <div><input class="shadow-md" type="checkbox" id="autumn"><label class="ml-2" for="autumn">Höst</label></div>
-                    <div><input class="shadow-md" type="checkbox" id="winter"><label class="ml-2" for="winter">Vinter</label></div>
+                    <div><input class="shadow-md" type="checkbox" id="spring"><label class="ml-2"
+                            for="spring">Vår</label></div>
+                    <div><input class="shadow-md" type="checkbox" id="summer"><label class="ml-2"
+                            for="summer">Sommar</label></div>
+                    <div><input class="shadow-md" type="checkbox" id="autumn"><label class="ml-2"
+                            for="autumn">Höst</label></div>
+                    <div><input class="shadow-md" type="checkbox" id="winter"><label class="ml-2"
+                            for="winter">Vinter</label></div>
                 </div>
 
                 <button
